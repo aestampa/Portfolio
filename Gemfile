@@ -26,6 +26,15 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Add rspec and mini_racer
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0.0'
+end
+
+# Add Capybara
+group :development, :test do
+  gem 'capybara'
+end
 
 group :production do
   gem 'pg' # for Heroku deployment
@@ -74,4 +83,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  # Install simplecov
+  gem 'simplecov', require: false
 end
