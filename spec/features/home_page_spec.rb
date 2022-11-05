@@ -1,13 +1,18 @@
 require "rails_helper"
 
 RSpec.feature "Visiting the homepage", type: :feature do
-  scenario "The visitor should see projects" do
-    visit root_path
-    expect(page).to have_text("Projects")
-  end
+  context "Create new project" do
+    before(:each) do
+      visit new_project_path
+      within("form") do
+        fill_in "Title", with: "Test title"
+        fill_in "Description", with: "Test description"
+      end
+    end
 
-  scenario "User logged in should see a new project option" do
-    visit root_path
-    expect(page).to have_text("New project")
+    scenario "should go back to homepage" do
+      click_link "Back to projects"
+      expect(page).to have_content("Projects")
+    end
   end
 end

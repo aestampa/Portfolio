@@ -86,5 +86,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   # Install simplecov
-  gem 'simplecov', require: false
+  gem 'simplecov', require: false, group: :test
 end

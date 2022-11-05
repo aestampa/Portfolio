@@ -21,18 +21,13 @@ RSpec.feature "Projects", type: :feature do
     end
   end
 
-  context "Create new project without title" do
+  context "Create Project Without Title" do
+    let(:project) { Project.create(title:"", description:"Test Description") }
     before(:each) do
       visit new_project_path
       within("form") do
         fill_in "Description", with: "Test Description"
       end
-    end
-
-    scenario "should be successful" do
-      fill_in "Title", with: "Test Title"
-      click_button "Create Project"
-      expect(page).to have_content("Project was successfully created")
     end
 
     scenario "should fail" do
@@ -72,13 +67,13 @@ RSpec.feature "Projects", type: :feature do
     end
   end
 
-context "Remove existing project" do
-  let!(:project) { Project.create(title: "Test title", description: "Test content") }
-  scenario "remove project" do
-    visit project_path(project)
-    click_button "Destroy this project"
-    expect(page).to have_content("Project was successfully destroyed")
-    expect(Project.count).to eq(0)
+  context "Remove existing project" do
+    let!(:project) { Project.create(title: "Test title", description: "Test content") }
+    scenario "remove project" do
+      visit project_path(project)
+      click_button "Destroy this project"
+      expect(page).to have_content("Project was successfully destroyed")
+      expect(Project.count).to eq(0)
+      end
     end
-  end
 end
