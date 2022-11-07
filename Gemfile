@@ -26,8 +26,7 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-gem 'tzinfo-data'
-
+gem "tzinfo-data"
 # Add rspec and mini_racer
 group :development, :test do
   gem 'rspec-rails', '~> 6.0.0'
@@ -38,6 +37,7 @@ group :development, :test do
   gem 'capybara'
 end
 
+gem 'pg' # for Heroku deployment
 group :production do
   gem 'pg' # for Heroku deployment
   gem 'rails_12factor'
