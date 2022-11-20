@@ -12,7 +12,7 @@ RSpec.feature "Projects", type: :feature do
     scenario "should be successful" do
       fill_in "Description", with: "Test description"
       click_button "Create Project"
-      expect(page).to have_content("Project was successfully created")
+      expect(page).to have_content("You need to sign in or sign up before continuing.")
     end
 
     scenario "should fail" do
