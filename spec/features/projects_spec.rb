@@ -1,6 +1,14 @@
 require 'rails_helper'
 
 RSpec.feature "Projects", type: :feature do
+  before(:each) do
+    visit new_user_registration_path
+    fill_in "Email", with: "user@test.com"
+    fill_in "Password", with: "user1234"
+    fill_in "confirmation", with: "user1234"
+    click_button "Sign up"
+  end
+
   context "Create new project" do
     before(:each) do
       visit new_project_path
@@ -12,7 +20,7 @@ RSpec.feature "Projects", type: :feature do
     scenario "should be successful" do
       fill_in "Description", with: "Test description"
       click_button "Create Project"
-      expect(page).to have_content("You need to sign in or sign up before continuing.")
+      expect(page).to have_content("Project was successfully created")
     end
 
     scenario "should fail" do
