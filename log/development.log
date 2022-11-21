@@ -2167,3 +2167,434 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 4726)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.17.0.1 at 2022-11-21 05:01:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:6
+  Rendered projects/_project.html.erb (Duration: 0.6ms | Allocations: 272)
+  Rendered projects/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 17998)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 93.3ms | Allocations: 58509)
+Completed 200 OK in 106ms (Views: 94.9ms | ActiveRecord: 1.4ms | Allocations: 65108)
+
+
+Started GET "/users/sign_out" for 172.17.0.1 at 2022-11-21 05:01:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 187ms (ActiveRecord: 0.1ms | Allocations: 343464)
+
+
+Started GET "/" for 172.17.0.1 at 2022-11-21 05:01:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:6
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 999)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2402)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 2778)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.17.0.1 at 2022-11-21 05:01:35 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:6
+  Rendered projects/_project.html.erb (Duration: 0.8ms | Allocations: 272)
+  Rendered projects/index.html.erb within layouts/application (Duration: 25.4ms | Allocations: 17982)
+  Rendered layout layouts/application.html.erb (Duration: 83.9ms | Allocations: 40363)
+Completed 200 OK in 103ms (Views: 87.6ms | ActiveRecord: 0.8ms | Allocations: 46962)
+
+
+Started GET "/projects/3" for 172.17.0.1 at 2022-11-21 05:01:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:64:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 960)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2242)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 5392)
+
+
+Started DELETE "/projects/3" for 172.17.0.1 at 2022-11-21 05:01:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:64:in `set_project'
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.1ms | Allocations: 5480)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-11-21 05:01:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 901)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 4514)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 5852)
+Completed 200 OK in 32ms (Views: 16.3ms | ActiveRecord: 0.5ms | Allocations: 23266)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.17.0.1 at 2022-11-21 05:02:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:6
+  Rendered projects/_project.html.erb (Duration: 0.6ms | Allocations: 272)
+  Rendered projects/index.html.erb within layouts/application (Duration: 21.8ms | Allocations: 18011)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 20196)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.8ms | Allocations: 26755)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Cs3300</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    
+  </head>
+
+  <body>
+    <p class="navbar-text float-right">
+    <%= link_to 'Homepage', root_path, :class => 'navbar-link' %> |
+    <% if user_signed_in? %>
+      Logged in as <strong><%= current_user.email %></strong>.
+      <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+    <% else %>
+      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+      <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+    <% end %>
+    </p>
+    <%= yield %>
+    <p class="alert"><%= alert %></p>
+    <% end %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Cs3300</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+10:        
+11:      </head>
+12:    
+13:      <body>
+14:        <p class="navbar-text float-right">
+15:        <%= link_to 'Homepage', root_path, :class => 'navbar-link' %> |
+16:        <% if user_signed_in? %>
+17:          Logged in as <strong><%= current_user.email %></strong>.
+18:          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+19:          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+20:        <% else %>
+21:          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+22:          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+23:        <% end %>
+24:        </p>
+25:        <%= yield %>
+26:        <p class="alert"><%= alert %></p>
+27:        <% end %>
+28:      </body>
+29:    </html>
+  
+app/views/layouts/application.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/application.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/application.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/application.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/application.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/application.html.erb:32: syntax error, unexpected `end', expecting end-of-input
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.17.0.1 at 2022-11-21 05:02:34 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:6
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 272)
+  Rendered projects/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 18009)
+  Rendered layout layouts/application.html.erb (Duration: 65.9ms | Allocations: 40581)
+Completed 200 OK in 78ms (Views: 68.0ms | ActiveRecord: 0.6ms | Allocations: 47180)
+
+
+Started GET "/projects/3" for 172.17.0.1 at 2022-11-21 05:02:40 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:64:in `set_project'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 961)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2246)
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 5396)
+
+
+Started DELETE "/projects/3" for 172.17.0.1 at 2022-11-21 05:02:41 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:64:in `set_project'
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.1ms | Allocations: 5478)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-11-21 05:02:41 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 901)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 4514)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 5877)
+Completed 200 OK in 32ms (Views: 16.6ms | ActiveRecord: 0.4ms | Allocations: 23299)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-11-21 05:02:57 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"meow@meow.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "meow@meow.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 244ms (ActiveRecord: 0.4ms | Allocations: 3475)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"meow@meow.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1340)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2543)
+Completed 200 OK in 234ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3336)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-11-21 05:03:05 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"bruh@bruh.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "bruh@bruh.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms | Allocations: 1529)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"bruh@bruh.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2365)
+Completed 200 OK in 235ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2969)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-11-21 05:03:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"baby@baby.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "baby@baby.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms | Allocations: 1347)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"baby@baby.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2364)
+Completed 200 OK in 240ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2966)
+
+
+Started GET "/users/sign_up" for 172.17.0.1 at 2022-11-21 05:03:20 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 226)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2399)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3754)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 5289)
+
+
+Started POST "/users" for 172.17.0.1 at 2022-11-21 05:03:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"meow@meow.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "meow@meow.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 615)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 97)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2551)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3883)
+Completed 200 OK in 249ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 10388)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-11-21 05:03:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1262)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2413)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3190)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-11-21 05:03:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"meow@meow.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "meow@meow.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 237ms (ActiveRecord: 0.1ms | Allocations: 2665)
+
+
+Started GET "/" for 172.17.0.1 at 2022-11-21 05:03:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:6
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 888)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2796)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.3ms | Allocations: 3125)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.17.0.1 at 2022-11-21 17:30:48 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:6
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 272)
+  Rendered projects/index.html.erb within layouts/application (Duration: 21.6ms | Allocations: 18006)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 84.7ms | Allocations: 58386)
+Completed 200 OK in 96ms (Views: 86.4ms | ActiveRecord: 1.1ms | Allocations: 64987)
+
+
+Started GET "/users/sign_out" for 172.17.0.1 at 2022-11-21 17:30:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 378ms (ActiveRecord: 0.2ms | Allocations: 343900)
+
+
+Started GET "/" for 172.17.0.1 at 2022-11-21 17:30:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:6
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 22)
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 991)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2393)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 2769)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2022-11-21 17:30:54 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 901)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 5241)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 6592)
+Completed 200 OK in 22ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 8639)
+
+
+Started POST "/users/sign_in" for 172.17.0.1 at 2022-11-21 17:31:02 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"meow@meow.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "meow@meow.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 244ms (ActiveRecord: 0.5ms | Allocations: 5338)
+
+
+Started GET "/" for 172.17.0.1 at 2022-11-21 17:31:02 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:6
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1016)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3021)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 3400)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

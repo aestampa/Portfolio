@@ -2,11 +2,8 @@ require 'rails_helper'
 
 RSpec.feature "Projects", type: :feature do
   before(:each) do
-    visit new_user_registration_path
-    fill_in "Email", with: "user@test.com"
-    fill_in "Password", with: "user1234"
-    fill_in "confirmation", with: "user1234"
-    click_button "Sign up"
+    user = FactoryBot.create(:user)
+    login_as(user, :scope => :user)
   end
 
   context "Create new project" do

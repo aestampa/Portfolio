@@ -60,7 +60,6 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Install factory_bot_rails
-gem 'factory_bot_rails'
 gem 'faker'
 
 # Use Sass to process CSS
@@ -91,7 +90,14 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-  gem "webdrivers"
+  
   # Install simplecov
   gem 'simplecov', require: false, group: :test
+  gem 'factory_bot_rails'
+
+  # A browser automation framework and ecosystem
+  gem 'selenium-webdriver'
+
+  # Keep your Selenium WebDrivers updated automatically
+  gem 'webdrivers', require: !ENV['SELENIUM_REMOTE_URL']
 end

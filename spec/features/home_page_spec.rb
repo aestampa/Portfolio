@@ -1,6 +1,12 @@
 require "rails_helper"
 
 RSpec.feature "Visiting the homepage", type: :feature do
+  scenario "Click homepage link" do
+    visit new_project_path
+    click_link "Homepage"
+    expect(page).to have_content "Projects"
+  end
+  
   context "Create new project" do
     before(:each) do
       visit new_project_path
