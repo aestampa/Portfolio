@@ -3,10 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.2"
 
-gem 'rspec-rails'
-gem 'factory_bot_rails'
-gem 'faker'
-
 # Add Devise
 gem 'devise'
 
