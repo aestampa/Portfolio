@@ -2,22 +2,23 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 orbs:
-  browser-tools: circleci/browser-tools@1.1
+  heroku: circleci/heroku@1.2.6
+
 jobs:
   build:
     docker:
       - image: 'tghastings/code-esaas'
-      - image: cimg/ruby:2.7-browsers
     steps:
-      - browser-tools/install-browser-tools
       - checkout
       - run:
-          ruby --version
-          node --version
-          java --version
-          google-chrome --version
           name: rspec
           command: bundle install && bundle exec rake db:migrate RAILS_ENV=test && bundle exec rspec
+  deploy:
+    executor: heroku/default
+    steps:
+      - checkout
+      - heroku/install
+      - heroku/deploy-via-git
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -26,3 +27,6 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - build
+      - deploy:
+          requires:
+            - build
