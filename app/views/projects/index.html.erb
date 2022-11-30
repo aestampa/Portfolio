@@ -1,14 +1,20 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Projects</h1>
-
+<div class="container-fluid p-5 border text-center">
+    <h1>Abby Estampador's Portfolio</h1>
+    <p>Timeline of Coding Projects During My College Career</p> 
+</div>
 <div id="projects">
+<div class="container-fluid mt-3">
+  <div class="row">
   <% @projects.each do |project| %>
-    <%= render project %>
-    <p>
-      <%= link_to "Show this project", project %>
-    </p>
+    <div class="col-sm-4">
+      <%= render project %>
+      <p>
+        <%= link_to "View Details", project, :class => "btn btn-dark pull-right" %>
+      </p>
+    </div>
   <% end %>
+  </div>
+</div>
 </div>
 
-<%= link_to "New project", new_project_path %>

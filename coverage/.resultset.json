@@ -843,11 +843,6 @@
           null
         ]
       },
-      "/root/cs3300/spec/controller/view_spec.rb": {
-        "lines": [
-
-        ]
-      },
       "/root/cs3300/spec/example/first_spec.rb": {
         "lines": [
           1,
@@ -1212,6 +1207,6 @@
         }
       }
     },
-    "timestamp": 1669067570
+    "timestamp": 1669820640
   }
 }

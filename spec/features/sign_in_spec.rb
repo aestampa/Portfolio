@@ -12,7 +12,7 @@ RSpec.feature "User signs in", type: :feature do
     click_button "Log in"
 
     expect(page).to have_text "Signed in successfully."
-    expect(page).to have_link "Logout"
+    expect(page).to have_link "Sign out"
     expect(page).to have_current_path root_path
   end
 

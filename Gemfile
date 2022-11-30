@@ -62,6 +62,9 @@ gem "bootsnap", require: false
 # Install factory_bot_rails
 gem 'faker'
 
+# bootstrap
+gem 'bootstrap', '~> 5.2.2'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
