@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Visiting the homepage", type: :feature do
   scenario "Click homepage link" do
     visit new_project_path
-    click_link "Homepage"
+    click_link "Home"
     expect(page).to have_content "Projects"
   end
   
