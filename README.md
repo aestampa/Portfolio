@@ -7,3 +7,5 @@ This Ruby-on-Rails-based website that displays some projects done over the cours
 * Built using Docker container
 
 * Bootstrap, Devise, Simplecov, etc.
+
+You can even see my Kanban board (a planning process) here: https://github.com/users/aestampa/projects/1/views/1
