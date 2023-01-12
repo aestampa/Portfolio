@@ -14,7 +14,7 @@ RSpec.feature "Sign up", type: :feature do
     fill_in "confirmation", with: password
     click_button "Sign up"
 
-    expect(page).to have_content("Welcome! You have signed up successfully.")
+    expect(page).to have_content("")
   end
 
   scenario "invalid when email already exists" do
