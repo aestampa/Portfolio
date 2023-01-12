@@ -1,3 +1,4 @@
+# Mock user
 FactoryBot.define do
     factory(:user) do
       email { "jane.doe@hey.com" }
