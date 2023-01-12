@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Ruby-on-Rails-based website that displays some projects done over the course of my college career. This was created through Ruby on Rails, Heroku, Devise, HTML, Bootstrap, etc. Through this project, I learned how to write tests to check code coverage, set up a container through Docker, troubleshoot some issues on the Linux operating system, use a continuous integration pipeline through CircleCI, etc.
 
-Things you may want to cover:
+* Ruby Version: 3.0.2
 
-* Ruby version
+* Built using Docker container
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Bootstrap, Devise, Simplecov, etc.
