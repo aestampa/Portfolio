@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@primer/css": "^20.8.0",
     "nodemon": "^2.0.20",
     "serve": "^14.0.1"
   },

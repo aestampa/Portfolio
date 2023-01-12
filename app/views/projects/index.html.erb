@@ -1,21 +1,28 @@
-<p style="color: green"><%= notice %></p>
-<div class="container-fluid p-5 border text-center">
-    <h1>Abby Estampador's Portfolio</h1>
-    <p>Timeline of Coding Projects During My College Career</p> 
-</div>
+
+    <h4 class="text-white text-center">Hello, my name is</h4>
+    <h2 class="text-white text-center display-4">Abby Estampador</h2>
+    <p class="text-white text-center">I'm a third-year computer science student at the
+       University of Colorado at Colorado Springs</p> 
+    <div class="col text-center">
+      <a href="https://github.com/aestampa" class="btn btn-dark text-center pull-right" role="button">View My GitHub Here</a>
+    </div>
+
 
 <div id="projects">
 <div class="container-fluid mt-3">
   <div class="row">
   <% @projects.each do |project| %>
     <div class="col-sm-4">
-      <%= render project %>
-      <p>
-        <%= link_to "View Details", project, :class => "btn btn-dark pull-right" %>
-      </p>
+
+    <div class="card-transparent">
+    <div class="card-block special-card" style="background-color: rgba(0, 0, 0, 0.75);"><%= render project %>
+      
+    </div>
+    </div>
+
+
     </div>
   <% end %>
   </div>
 </div>
 </div>
-

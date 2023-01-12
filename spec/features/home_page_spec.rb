@@ -4,7 +4,7 @@ RSpec.feature "Visiting the homepage", type: :feature do
   scenario "Click homepage link" do
     visit new_project_path
     click_link "Home"
-    expect(page).to have_content "Projects"
+    expect(page).to have_content "Hello"
   end
   
   context "Create new project" do
@@ -18,7 +18,7 @@ RSpec.feature "Visiting the homepage", type: :feature do
 
     scenario "should go back to homepage" do
       click_link "Back to projects"
-      expect(page).to have_content("Projects")
+      expect(page).to have_content("Hello")
     end
   end
 end

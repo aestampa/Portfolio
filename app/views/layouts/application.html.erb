@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cs3300</title>
+    <style>
+    body {
+      background-image: url('https://wallpapersmug.com/download/1920x1080/d977e6/silhouette-buildings-city.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+    </style>
+    <title>Abby's Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,7 +19,6 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
-
   <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
@@ -22,9 +29,7 @@
         <li class="nav-item">
           <% if user_signed_in? %>
             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'nav-link' %> |
-          <% else %>
-            <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link'  %> |
-          <% end %>    
+          <% end %> 
         </li>
         <li class="nav-item">
           <% if user_signed_in? %>
